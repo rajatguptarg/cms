@@ -1,0 +1,16 @@
+<div >
+      <div class="panel-heading"> <h4>{{ object.title }}</h4></div>
+          {% for outlet in outlets.outlet_details %}
+            <div class="panel-default panel row">
+                <div class="col-md-7" >
+                    <img src={{ outlet.image }}>
+                </div>
+                <div class="col-md-5">
+                    <h2> {{ outlet.name }}</h2> </br>
+                    <div class="hidden-xs"> {{outlet.longDescription }} </div>
+                    <div class="visible-xs-*"> {{outlet.shortDescription }} </div>
+                </div>
+            </div>
+          {% endfor %}
+      </div>
+</div>

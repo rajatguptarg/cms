@@ -130,6 +130,7 @@ INSTALLED_APPS = (
     'reversion',
     'bial',
     'card',
+    'outlet',
 )
 
 LANGUAGES = (
@@ -206,3 +207,5 @@ MIGRATION_MODULES = {
     'djangocms_style': 'djangocms_style.migrations_django',
     'djangocms_teaser': 'djangocms_teaser.migrations_django'
 }
+
+API_URL = 'http://172.18.75.2/cs/outlets'
