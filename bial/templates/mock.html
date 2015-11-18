@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load cms_tags  %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+    <div class="row col-md-12 panel panel-default">
+        {% placeholder 'text_only_1' %}
+    </div>
+    <div class="row">
+        <div class="col-md-4 panel panel-default">
+            {% placeholder 'video_only' %}
+        </div>
+        <div class="col-md-8 panel panel-default">
+            {% placeholder 'text_only_2' %}
+        </div>
+    </div>
+        <div class="col-md-6 panel panel-default">
+            {% placeholder 'image_only_1'  %}
+        </div>
+        <div class="col-md-6 panel panel-default">
+            {% placeholder 'image_only_2'  %}
+        </div>
+        <div class="col-md-12">
+        {% placeholder 'card_only' %}
+</div>
+
+
+{% endblock content %}
+

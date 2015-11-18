@@ -1,0 +1,22 @@
+<div class="panel panel-default">
+      <div class="panel-heading"> <h4>{{ object.title }}</h4></div>
+          <div class="panel-body">
+                <div class="list-group">
+                    <img src="{{ object.image_url|default_if_none:'#' }}" 
+                    style="
+                      max-width: 500px;
+                      min-width: 100px;
+                      padding: 10px;
+                      height: 500px;
+                      float: left;
+                      display: inline-block;
+                    "/>
+                </div>
+
+                <div class="list-group" style="float: left">
+                    <p>{{ object.description }} </p> </br> 
+                    <a href={{ object.url }}> Link </a>
+                </div>
+        </div>
+  </div>
+
