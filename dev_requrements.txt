@@ -3,7 +3,7 @@ aldryn-forms==1.0.0
 cssselect==0.9.1
 cssutils==1.0.1
 dj-database-url==0.3.0
-Django==1.7.10
+Django==3.2.24
 django-absolute==0.3
 django-appconf==1.0.1
 django-classy-tags==0.6.2
